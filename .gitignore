@@ -8,6 +8,7 @@
 *.toc
 *.fls
 *.fdb_latexmk
+preview/
 
 # Python
 __pycache__/
