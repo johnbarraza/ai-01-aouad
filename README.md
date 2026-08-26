@@ -54,7 +54,7 @@ p^*(s,a)=\max\{p(x^*),p(s+a)\},
 
 where $(z)_+=\max\{z,0\}$.
 
-**Intuition.** The worker targets $x^*$ units of total input. If skill plus AI
+**Intuition.** The worker targets $x^{\ast}$ units of total input. If skill plus AI
 fall short, effort fills exactly the gap. If they already reach or exceed the
 target, the nonnegativity constraint binds and effort is zero.
 
@@ -68,11 +68,11 @@ Set $x=s+e+a$. Because $e\geq0$, the transformed problem is
 
 The final term is constant, so only the feasible lower bound matters.
 
-- If $s+a\leq x^*$, the target remains feasible. Hence
-  $x^{\mathrm{opt}}=x^*$ and $e^*=x^*-s-a$.
-- If $s+a>x^*$, effort cannot reduce total input back to the target. Concavity
+- If $s+a\leq x^{\ast}$, the target remains feasible. Hence
+  $x^{\mathrm{opt}}=x^{\ast}$ and $e^{\ast}=x^{\ast}-s-a$.
+- If $s+a>x^{\ast}$, effort cannot reduce total input back to the target. Concavity
   makes net output fall to the right of the largest maximizer, so the best
-  feasible point is $x^{\mathrm{opt}}=s+a$ and $e^*=0$.
+  feasible point is $x^{\mathrm{opt}}=s+a$ and $e^{\ast}=0$.
 
 Combining the cases yields the positive-part formula. Substituting the optimal
 total input into $p$ yields the productivity formula.
