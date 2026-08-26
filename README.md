@@ -9,7 +9,9 @@ Can AI reduce human effort while still raising output? The basic model isolates
 one mechanism: skill, effort, and AI assistance are **perfect substitutes**.
 They affect production only through total input
 
-$$x=s+e+a.$$
+```math
+x=s+e+a.
+```
 
 Thus, skill or AI can replace units of costly human effort one for one.
 
@@ -18,19 +20,19 @@ Thus, skill or AI can replace units of costly human effort one for one.
 An agent with skill $s>0$ observes assistance $a\geq0$ and chooses effort
 $e\geq0$:
 
-$$
+```math
 \max_{e\geq0}\;u(e,s,a)
 =p(s+e+a)-\gamma e,
 \qquad \gamma>0.
-$$
+```
 
 The production function $p:\mathbb{R}_{+}\to\mathbb{R}_{+}$ is weakly
 increasing, weakly concave, continuous, and twice differentiable. The paper also
 imposes
 
-$$
+```math
 \limsup_{x\to\infty}\frac{p(x)}{x}<\gamma,
-$$
+```
 
 which makes the relevant maximizing set nonempty and bounded.
 
@@ -38,17 +40,17 @@ which makes the relevant maximizing set nonempty and bounded.
 
 Define the critical total input using the paper's largest-maximizer tie-break:
 
-$$
+```math
 x^*=\max\arg\max_{x\geq0}\{p(x)-\gamma x\}.
-$$
+```
 
 Then
 
-$$
+```math
 e^*(s,a)=(x^*-s-a)_+,
 \qquad
 p^*(s,a)=\max\{p(x^*),p(s+a)\},
-$$
+```
 
 where $(z)_+=\max\{z,0\}$.
 
@@ -60,9 +62,9 @@ target, the nonnegativity constraint binds and effort is zero.
 
 Set $x=s+e+a$. Because $e\geq0$, the transformed problem is
 
-$$
+```math
 \max_{x\geq s+a}\{p(x)-\gamma x\}+\gamma(s+a).
-$$
+```
 
 The final term is constant, so only the feasible lower bound matters.
 
