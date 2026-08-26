@@ -26,9 +26,9 @@ $e\geq0$:
 \qquad \gamma>0.
 ```
 
-The production function $p:\mathbb{R}_{+}\to\mathbb{R}_{+}$ is weakly
-increasing, weakly concave, continuous, and twice differentiable. The paper also
-imposes
+The production function $p$ maps nonnegative total input to nonnegative output
+and is weakly increasing, weakly concave, continuous, and twice differentiable.
+The paper also imposes
 
 ```math
 \limsup_{x\to\infty}\frac{p(x)}{x}<\gamma,
