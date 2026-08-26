@@ -1,19 +1,15 @@
 # Handwritten verification
 
-Add at least one **real photograph of your own handwritten derivation** here
-before merging the pull request.
+![Case-split proof of Proposition 2.1](prop-2-1-case-split.jpg)
 
-Suggested filename: `prop-2-1-case-split.jpg`.
+`prop-2-1-case-split.jpg` is my own handwritten derivation of Proposition 2.1.
+It rewrites the problem with total input `x = s + e + a`, derives the feasible
+set `x >= s + a`, and treats both cases: for `s + a <= x*` effort fills the gap
+(`e* = x* - s - a`, `p* = p(x*)`), and for `s + a > x*` reaching `x*` would need
+negative effort (a contradiction), so `e* = 0` and `p* = p(s + a)`. Combining
+the cases gives `e* = (x* - s - a)_+` and `p* = max{p(x*), p(s+a)}`.
 
-The photograph should verify Proposition 2.1 without relying only on a
-first-order condition:
-
-1. Rewrite the problem using total input `x = s + e + a`.
-2. Derive the feasible set `x >= s + a`.
-3. Treat separately `s + a <= x*` and `s + a > x*`.
-4. Recover both `e*(s,a)` and `p*(s,a)`.
-5. Explain why the largest-maximizer tie-break matters when the objective has a
-   flat maximum.
-
-After adding the photo, replace this note with one sentence describing exactly
-what you checked and what verdict you reached about the AI answer.
+**Verdict on the AI.** The AI's first-order-condition proof gave the right
+formula but was **incomplete**: it assumed an interior solution and never
+justified the corner `e = 0` or the largest-maximizer tie-break. The case split
+above closes both gaps, so I verified rather than trusted the AI answer.
