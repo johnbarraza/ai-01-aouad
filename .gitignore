@@ -1,0 +1,26 @@
+# LaTeX build artifacts
+*.aux
+*.log
+*.nav
+*.out
+*.snm
+*.synctex.gz
+*.toc
+*.fls
+*.fdb_latexmk
+preview/
+
+# Python
+__pycache__/
+*.pyc
+
+# Local/editor files
+.DS_Store
+.vscode/
+
+# Third-party article: download it from arXiv instead of committing it
+paper/*.pdf
+
+# Personal documents must never enter the public repository
+DNI*
+*_DNI*
